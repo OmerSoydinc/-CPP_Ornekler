@@ -13,7 +13,7 @@ int main()
 	int a=5;
 	int toplam;
 	
-	cout<<"iki sayý giriniz:"<<endl;
+	cout<<"iki sayi giriniz:"<<endl;
 	cin>>sayi1;
 	cin>>sayi2;
 	toplam=sayi1+sayi2;
@@ -21,14 +21,14 @@ int main()
 	
 	//---------------------------------
 	
-	cout<<"Ýlk sayýyý giriniz: ";
+	cout<<"Ilk sayiyi giriniz: ";
 	cin>>sayi1;
-	cout<<"Ýkinci sayýyý giriniz: ";
+	cout<<"Ikinci sayiyi giriniz: ";
 	cin>>sayi2;
 	
 	toplam=sayi1+sayi2;
 	
-	cout<<"Sayýlarýn ToplamI= "<<toplam<<endl;
+	cout<<"Sayilarin Toplami= "<<toplam<<endl;
 	
 	cout<<endl,cout<<endl;
 	
@@ -38,23 +38,23 @@ int main()
 	float boy;
 	
 	
-	cout<<"Adýnýzý giriniz: ";
+	cout<<"Adinizi giriniz: ";
 	cin>>ad;
 	
-	cout<<"Soyadýnýzý giriniz: ",
+	cout<<"Soyadinizi giriniz: ",
 	cin>>soyad;
 	
-	cout<<"Yaþýnýzý giriniz: ";
+	cout<<"Yasinizi giriniz: ";
 	cin>>yas;
 	
 	cout<<"Boyunuzu giriniz: ";
 	cin>>boy;
 	
-	cout<<"Numaranýzý giriniz: ";
+	cout<<"Numaranizi giriniz: ";
 	cin>>no;
 	cout<<endl;cout<<endl;
 	
-	cout<<"Sayýn:"<<"  "<<ad<<" "<<soyad<<"    "<<"Bilgileriniz:"<<endl;
+	cout<<"Sayin:"<<"  "<<ad<<" "<<soyad<<"    "<<"Bilgileriniz:"<<endl;
 	cout<<yas<<"  "<<no<<"  "<<boy<< endl;
 	
 	system("pause");
