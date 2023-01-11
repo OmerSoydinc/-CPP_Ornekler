@@ -13,24 +13,24 @@ int main()
 	
 	for(j=0;j<7;j++)
 	{
-		cout<<j+1<<". günün sýcaklýðýný giriniz= ";
+		cout<<j+1<<". gÃ¼nÃ¼n sicakligini giriniz= ";
 		cin>>sicaklik[j];
 	}
 	
-	cout<<"---giridðiniz sýcaklýklar--- "<<endl;
+	cout<<"---girdiÄŸiniz sicakliklar--- "<<endl;
 	for(j=0;j<7;j++)
-	cout<<"girdiðiniz"<<j+1<<"günün sýcaklýðý= "<<sicaklik[j]<<endl;
+	cout<<"girdiÄŸiniz"<<j+1<<"gÃ¼nÃ¼n sicakligi= "<<sicaklik[j]<<endl;
 	
 	int toplamsicaklik=0;
 	for(j=0;j<7;j++)
 	toplamsicaklik +=sicaklik[j];
 	
-	cout<<"girdiðiniz "<<j<<"günlük toplam sýcaklýk= "<<toplamsicaklik<<endl;
-	cout<<"girdiðiniz "<<j<<"günlük sýcaklýðýn ortalamasý= "<<toplamsicaklik/7<<endl;
+	cout<<"girdiÄŸiniz "<<j<<"gÃ¼nlÃ¼k toplam sicaklik= "<<toplamsicaklik<<endl;
+	cout<<"girdiÄŸiniz "<<j<<"gÃ¼nlÃ¼k sicaklik ortalamasÃ½= "<<toplamsicaklik/7<<endl;
 	
 	
 	int aratoplam=sicaklik[0]+sicaklik[1]+sicaklik[2];
-	cout<<"ilk 3 günün toplam sýcaklýðý= "<<aratoplam<<endl;
+	cout<<"ilk 3 gÃ¼nÃ¼n toplam sicakigi= "<<aratoplam<<endl;
 	
 	system("pause");
 	return 0;
