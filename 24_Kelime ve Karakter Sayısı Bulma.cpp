@@ -10,7 +10,7 @@ int main()
 	int kelsay=1;
 	char ch='a';
 	
-	cout<<"BİR CÜMLE GİRİNİZ "<<endl;
+	cout<<"bir cÃ¼mle giriniz "<<endl;
 	
 	while(ch !='\r')
 	{
@@ -21,8 +21,8 @@ int main()
 		else 
 		karsay++;
 	}
-	cout<<"KElİME SAYISI=  "<<kelsay<<endl;
-	cout<<"KARAKTER SAYISI=  "<<(karsay-1)<<endl;
+	cout<<"kelime sayÄ±sÄ±=  "<<kelsay<<endl;
+	cout<<"karakter sayÄ±sÄ±=  "<<(karsay-1)<<endl;
 	
 	system("pause");
 	return 0;
