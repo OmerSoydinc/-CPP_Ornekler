@@ -2,11 +2,10 @@
 #include<locale.h>
 #include<math.h>
 
-/* Matris Topla-Çarp-Determinat Hessaplama
-1.	3X3 boyutlarındaki klavyeden elemanları girilen A ve B matrisleri arasında 
-C=A+B, C=AxB ve detA hesaplayıp sonuçları anlaşılır bir görsellikte ekrana yazan programı yazın. 
-(bu klasik ve önemli problemin kaynaklarda çok sayıda çözümü mevcuttur, 
-kendi özgün çözümünüzü oluşturmanız sizin için önemlidir!)
+/* Matris Topla-Ã‡arp-Determinat Hessaplama
+Soru:
+3X3 boyutlarÄ±ndaki klavyeden elemanlarÄ± girilen A ve B matrisleri arasÄ±nda 
+C=A+B, C=AxB ve detA hesaplayÄ±p sonuÃ§larÄ± anlaÅŸÄ±lÄ±r bir gÃ¶rsellikte ekrana yazan programÄ± yazÄ±nÄ±z. 
 */
 using namespace std;
 int main()
@@ -34,60 +33,68 @@ int main()
 		
 	}
 	cout<<"sonuc= "<<max-min<<endl;
-	cout<<"adım= "<<adim<<endl;
+	cout<<"adÄ±m= "<<adim<<endl;
 	
 	
 	
-	cout<<"  1.MATRİSİN İLK  SÜTUNUNU YUKARDAN AŞAĞI YAZINIZ: "<<endl;
+	cout<<"  1.MATRÄ°SÄ°N Ä°LK  SÃœTUNUNU YUKARDAN AÅAÄI YAZINIZ: "<<endl;
 	for(k=0;k<3;k++)
 	cin>>d1[k];
 	
 	
-	cout<<"  1.MATRİSİN İKİNCİ SÜTUNUNU YUKARDAN AŞAĞI YAZINIZ: "<<endl;
+	cout<<"  1.MATRÄ°SÄ°N Ä°KÄ°NCÄ° SÃœTUNUNU YUKARDAN AÄAÅI YAZINIZ: "<<endl;
 	for(k=3;k<6;k++)
 	cin>>d1[k];
 	
 	
 		
-	cout<<"  1.MATRİSİN ÜÇÜNCÜ SÜTUNUNU YUKARDAN AŞAĞI YAZINIZ: "<<endl;
+	cout<<"  1.MATRÄ°SÄ°N ÃœÃ‡ÃœNCÃœ SÃœTUNUNU YUKARDAN AÅAÄI YAZINIZ: "<<endl;
 	for(k=6;k<9;k++)
 	cin>>d1[k];
 	
-	
+	cout<<" ----------------------------------------------------"<<endl;
 	
 	int m;
 	
-	cout<<"  2.MATRİSİN İLK SÜTUNUNU YUKARDAN AŞAĞI YAZINIZ: "<<endl;
+	cout<<"  2.MATRÄ°SÄ°N Ä°LK SÃœTUNUNU YUKARDAN AÅAÄI YAZINIZ: "<<endl;
 	for(m=0;m<3;m++)
 	cin>>d2[m];
 	
 	
-	cout<<"  2.MATRİSİN İKİNCİ SÜTUNUNU YUKARDAN AŞAĞI YAZINIZ: "<<endl;
+	cout<<"  2.MATRÄ°SÄ°N Ä°KÄ°NCÄ° SÃœTUNUNU YUKARDAN AÅAÄI YAZINIZ: "<<endl;
 	for(m=3;m<6;m++)
 	cin>>d2[m];
 	
 	
-	cout<<"  2.MATRİSİN ÜÇÜNCÜ SÜTUNUNU YUKARDAN AŞAĞI YAZINIZ: "<<endl;;
+	cout<<"  2.MATRÄ°SÄ°N ÃœÃ‡ÃœNCÃœ SÃœTUNUNU YUKARDAN AÅAÄI YAZINIZ: "<<endl;;
 	for(m=6;m<9;m++)
 	cin>>d2[m];
 	
-	cout<<"TOPLAMLARI: "<<endl;
+	cout<<" ----------------------------------------------------"<<endl;
+	
+	cout<<"     TOPLAMLARI: "<<endl;
 	cout<<d1[0]+d2[0]<<"  "<<d1[3]+d2[3]<<"  "<<d1[6]+d2[6]<<endl;
 	cout<<d1[1]+d2[1]<<"  "<<d1[4]+d2[4]<<"  "<<d1[7]+d2[7]<<endl;
 	cout<<d1[2]+d2[2]<<"  "<<d1[5]+d2[5]<<"  "<<d1[8]+d2[8]<<endl;
 	
+	cout<<" ----------------------------------------------------"<<endl;
 	
-	cout<<"ÇARPIMLARI:"<<endl;
+	cout<<"     Ã‡ARPIMLARI:"<<endl;
 	cout<<d1[0]*d2[0]+d1[3]*d2[1]+d1[6]*d2[2]<<"  "<<d1[0]*d2[3]+d1[3]*d2[4]+d1[6]*d2[5]<<"  "<<d1[0]*d2[6]+d1[3]*d2[7]+d1[6]*d2[8]<<endl;
 	cout<<d1[1]*d2[0]+d1[4]*d2[1]+d1[7]*d2[2]<<"  "<<d1[1]*d2[3]+d1[4]*d2[4]+d1[7]*d2[5]<<"  "<<d1[1]*d2[6]+d1[4]*d2[7]+d1[7]*d2[8]<<endl;
 	cout<<d1[2]*d2[0]+d1[5]*d2[1]+d1[8]*d2[2]<<"  "<<d1[2]*d2[3]+d1[5]*d2[4]+d1[8]*d2[5]<<"  "<<d1[2]*d2[6]+d1[5]*d2[7]+d1[8]*d2[8]<<endl;
 	
+	cout<<" ----------------------------------------------------"<<endl;
 	
-	cout<<"BİRİNCİ MATRİSİN det DEĞERİ = ";
+	cout<<"     BÄ°RÄ°NCÄ° MATRÄ°SÄ°N det DEÄERÄ° = ";
 	cout<<(d1[0]*d1[4]*d1[8]+d1[3]*d1[7]*d1[2]+d1[6]*d1[1]*d1[3])-(d1[2]*d1[4]*d1[6]+d1[5]*d1[7]*d1[0]+d1[8]*d1[1]*d1[3])<<endl;
 	
-	cout<<"İKİNCİ MATRİSİN det DEĞERİ= ";
+	cout<<" ----------------------------------------------------"<<endl;
+	
+	cout<<"     Ä°KÄ°NCÄ° MATRÄ°SÄ°N det DEÄERÄ°= ";
 	cout<<(d2[0]*d2[4]*d2[8]+d2[3]*d2[7]*d2[2]+d2[6]*d2[1]*d2[3])-d2[2]*d2[4]*d2[6]-d2[5]*d2[7]*d2[0]-d2[8]*d2[1]*d2[3]<<endl;
+	
+	cout<<" ----------------------------------------------------"<<endl;
 	
 	system("pause");
 	return 0;
